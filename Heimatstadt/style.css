@@ -1,0 +1,139 @@
+body {
+		font-family: "Comic Sans MS", sans-serif;
+		background-image: url("https://raw.githubusercontent.com/THC008/Website-Lib/main/images/shanshuihua.jpg");
+}
+h1 {
+	width: 100%;
+	font-weight: lighter;
+	text-align: center;
+	font-size: 40px;
+	color: indianred;
+}
+h2 {
+	display: inline-block;
+	text-align: center;
+	background-color: indianred;
+	padding: 3px;
+	margin: 5px;
+	font-weight: lighter;
+	font-size: 28px;
+	color: white;
+}
+.button1 {
+	font-family: "Comic Sans MS";
+	border: none;
+	display: inline-block;
+	font-weight: bold;
+	color: indianred;
+	background-color: white;
+	text-decoration: none;
+	text-align: center;
+	padding: 10px;
+	font-size: 20px;
+	margin: 4px 0px;
+	transition-duration: 0.4s;
+	cursor: pointer;
+}
+
+.button1:hover {
+	background-color: indianred;
+	color: white;
+}
+
+.container {
+	min-width: 775px;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+/*.main {
+	background-size: cover;
+	display: block;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	background-image: url("https://upload.wikimedia.org/wikipedia/commons/2/26/Location_of_Mianyang_Prefecture_within_Sichuan_%28China%29.png");
+}*/
+#myID1 {
+		text-align: center;
+		 font-size: 40pt;
+		 font-weight:bold;
+		 color: red;
+		margin-top: 20px;
+}
+.myClass1 {
+	width: 100%; 
+	text-align: center;
+	font-size:26pt;
+	color: red;
+	
+}
+.myClass2 {
+	width: 100%; 
+	text-align: left;
+	font-size:20pt;
+	color: grey
+}
+.myClass3 {
+	width: 100%; 
+	text-align: center;
+	font-size:14pt;
+	color: darkgreen; 
+	font-family: Verdana;
+	background-color: yellow;
+	 padding: 10px;
+}
+
+.more {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding-top: 45px;
+}
+
+.more div {
+	background-size: cover;
+	min-width: 450px;
+	min-height: 345px;
+	display: flex;
+	justify-content: left;
+	align-items: center;
+	margin-right: 30px;
+	margin-left: 30px;
+}
+
+#sights {
+	background-image: url("https://raw.githubusercontent.com/THC008/Website-Lib/main/images/my_yuewanglou_edited.png");
+}
+
+#events {
+	background-image: url("https://raw.githubusercontent.com/THC008/Website-Lib/main/images/my_mifen.jpg");
+}
+
+#footer {
+	position: fixed;
+	bottom: 0;
+	right: 0;
+	text-align: center;
+}
+
+.button2 {
+	font-family: "Comic Sans MS";
+	border: none;
+	display: inline-block;
+	font-weight: bold;
+	color: white;
+	background-color: skyblue;
+	text-decoration: none;
+	text-align: center;
+	padding: 10px;
+	font-size: 20px;
+	margin: 4px 0px;
+	transition-duration: 0.4s;
+	cursor: pointer;
+}
+
+.button2:hover {
+	background-color: white;
+	color: skyblue;
+}
