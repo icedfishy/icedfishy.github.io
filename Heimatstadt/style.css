@@ -1,6 +1,6 @@
 body {
 		font-family: "Comic Sans MS", sans-serif;
-		background-image: url("https://raw.githubusercontent.com/THC008/Website-Lib/main/images/shanshuihua.jpg");
+		background-image: url("../images/shanshuihua.jpg");
 }
 h1 {
 	width: 100%;
@@ -103,11 +103,11 @@ h2 {
 }
 
 #sights {
-	background-image: url("https://raw.githubusercontent.com/THC008/Website-Lib/main/images/my_yuewanglou_edited.png");
+	background-image: url("../images/my_yuewanglou_edited.png");
 }
 
 #events {
-	background-image: url("https://raw.githubusercontent.com/THC008/Website-Lib/main/images/my_mifen.jpg");
+	background-image: url("../images/my_mifen.jpg");
 }
 
 #footer {
@@ -136,4 +136,5 @@ h2 {
 .button2:hover {
 	background-color: white;
 	color: skyblue;
+
 }
