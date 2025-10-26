@@ -8,7 +8,7 @@ html, body {
 
 body {
   font-family: 'Verdana', sans-serif;
-  background-image: url('https://raw.githubusercontent.com/THC008/Website-Lib/main/images/Caocao.png');
+  background-image: url('../images/Caocao.png');
   background-position: center top;
   background-size: cover;
   margin: 0;
@@ -91,6 +91,7 @@ nav a {
   color: darkmagenta;
   text-decoration: none;
 }
+
 
 
 
