@@ -5,14 +5,15 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Made with Brain</title>
-    <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
     <!-- <link rel="stylesheet" href="style.css"> -->
 </head>
 
 
 <style>
     html, body {
-      min-height: 100%;
+      height: 100%;
+	  margin: 0;
       display: flex;
       flex-direction: column;
       font-weight: 300;
@@ -21,7 +22,7 @@
     
     body {
       font-family: 'Verdana', sans-serif;
-      background-image: url('../images/Caocao.png');
+      background-image: url('images/Caocao.png');
       background-position: center top;
       background-size: cover;
       margin: 0;
@@ -32,7 +33,16 @@
       color: darkmagenta;
       text-decoration: none;
     }
-    
+
+	.wrapper {
+		flex-direction: column;
+		height: 100%;
+	}
+
+	.content {
+		flex: 1;
+	}
+	
     .title {
       text-align: center;
       font-size: 48px;
@@ -107,7 +117,8 @@
 
 
 <body>
-
+	<div class="wrapper">
+	<div class="content">
     <header>
         <h1 class="title">My websites collection</h1>
     </header>
@@ -126,7 +137,7 @@
             <h2 class="cover">Heimatstadt</h2>
         </a>
     </div>
-
+	</div>
 
     <nav>
         <ul>
@@ -137,7 +148,7 @@
             <a href="mailto:cnhomo114@outlook.com">Contakt</a>
         </div>
     </nav>
-
+	</div>
 </body>
 
 </html>
