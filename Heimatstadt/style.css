@@ -63,6 +63,7 @@ h1 {
 		 color: red;
 		margin-top: 20px;
 }
+/*
 .myClass1 {
 	width: 100%; 
 	text-align: center;
@@ -85,7 +86,7 @@ h1 {
 	background-color: yellow;
 	 padding: 10px;
 }
-
+*/
 .more {
 	display: flex;
 	justify-content: center;
@@ -163,8 +164,8 @@ h1 {
 /* 修复 flex 排列 */
 /* 确保 .gallery 在移动设备上垂直堆叠 */
 .gallery {
-  display: flex;
-  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
   justify-content: center;
   align-items: flex-start;
   gap: 20px;
@@ -173,8 +174,8 @@ h1 {
 
 /* 确保 .more 在移动设备上垂直堆叠 */
 .more {
-  display: flex;
-  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
   justify-content: center;
   align-items: center;
   gap: 10px; /* 减少间距以适应小屏幕 */
@@ -197,3 +198,4 @@ h1 {
     max-width: 100%;
   }
 }
+
