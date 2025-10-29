@@ -28,6 +28,13 @@ body {
 a {
 	color: darkmagenta;
 	text-decoration: none;
+	transition-duration: 0.4s;
+	cursor: pointer;
+}
+
+a:hover {
+	color: black;
+	background-color: white;
 }
 
 /* 容器：保证页面主体伸展占满高度 */
@@ -119,11 +126,6 @@ nav li {
 	padding: 8px 18px;
 	border: 1px solid darkmagenta;
 	position: relative; 
-}
-
-a:hover {
-	color: white;
-	background-color: black;
 }
 
 nav a {
