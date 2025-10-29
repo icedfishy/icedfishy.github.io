@@ -102,6 +102,7 @@ a:hover {
 /* 导航栏和联系按钮 */
 nav {
 	background-color: #FFF;
+	margin-top: auto;
 }
 
 nav ul {
