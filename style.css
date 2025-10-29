@@ -93,6 +93,10 @@ a:hover {
 	text-align: center;
 }
 
+.cover a:hover {
+	color: inherit;
+}
+
 .cover h2 {
 	margin: 0;
 	font-size: 30px;
@@ -102,7 +106,10 @@ a:hover {
 /* 导航栏和联系按钮 */
 nav {
 	background-color: #FFF;
-	margin-top: auto;
+	 position: fixed;
+        bottom: 0; /* 距离视口底部为 0 */
+        left: 0;
+        width: 100%;
 }
 
 nav ul {
