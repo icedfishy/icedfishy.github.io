@@ -2,6 +2,9 @@ body {
 		font-family: "Comic Sans MS", handlee, sans-serif;
 		background-image: url("../images/shanshuihua.jpg");
 }
+button {
+	font-family: "Comic Sans MS", handlee, sans-serif;
+}
 h1 {
 	width: 100%;
 	font-weight: lighter;
@@ -156,3 +159,4 @@ h1 {
 		padding: 12px;
 	}
 }
+
