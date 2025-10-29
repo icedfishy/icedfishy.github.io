@@ -159,6 +159,28 @@ h1 {
 		padding: 12px;
 	}
 }
+/* FIX */
+/* 修复 flex 排列 */
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 20px;
+  padding: 20px;
+}
 
+.more {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  padding-top: 45px;
+}
 
-
+.gallery > a,
+.more > div {
+  flex: 1 1 300px;
+  max-width: 450px;
+}
