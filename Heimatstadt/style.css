@@ -161,26 +161,39 @@ h1 {
 }
 /* FIX */
 /* 修复 flex 排列 */
+/* 确保 .gallery 在移动设备上垂直堆叠 */
 .gallery {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   align-items: flex-start;
   gap: 20px;
-  padding: 20px;
+  padding: 10px; /* 减少内边距以适应小屏幕 */
 }
 
+/* 确保 .more 在移动设备上垂直堆叠 */
 .more {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  gap: 20px;
-  padding-top: 45px;
+  gap: 10px; /* 减少间距以适应小屏幕 */
+  padding-top: 20px; /* 减少顶部内边距 */
 }
 
+/* 为地图和按钮区设置最小宽度和最大宽度 */
 .gallery > a,
 .more > div {
-  flex: 1 1 300px;
-  max-width: 450px;
+  flex: 1 1 300px; /* 弹性增长，最小 300px，不够就换行 */
+  max-width: 100%; /* 确保在小屏幕上不会超出容器宽度 */
+  box-sizing: border-box; /* 包括内边距和边框在内的总宽度 */
+}
+
+/* 针对移动设备的特定样式 */
+@media (max-width: 600px) {
+  .gallery > a,
+  .more > div {
+    flex-basis: 100%; /* 在小屏幕上占满整行 */
+    max-width: 100%;
+  }
 }
