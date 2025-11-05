@@ -55,17 +55,24 @@ body{
 	color: white;
 }
 
-#sights {
-	justify-content: left;
+#map {
+	/* justify-content: left;
 	min-width: 450px;
-	min-height: 345px;
+	min-height: 345px; */
+	background-image: url("../images/mianyang_map.png");
+}
+
+#sights {
+	/* justify-content: left;
+	min-width: 450px;
+	min-height: 345px; */
 	background-image: url("../images/my_yuewanglou_edited.png");
 }
 
 #events {
-	justify-content: left;
+	/* justify-content: left;
 	min-width: 450px;
-	min-height: 345px;
+	min-height: 345px; */
 	background-image: url("../images/my_mifen.jpg");
 }
 
