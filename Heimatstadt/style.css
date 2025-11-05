@@ -1,9 +1,9 @@
 body{
   font-family: "Comic Sans MS", "Handlee", "Comic Neue", sans-serif;
-  background-image: url("../image/shanshuihua.jpg");
+  background-image: url("../images/shanshuihua.jpg");
 }
 
-.title h1 {
+.title {
 	width: 100%;
 	font-weight: lighter;
 	text-align: center;
@@ -12,12 +12,18 @@ body{
 }
 
 .gallery {
-  min-width: 775px;
+	padding-top: 45px;
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: center;
 	gap: 20px; /* 卡片间距 */
 	padding: 0 16px; /* 移动端边距 */
+	background-size: cover;
+	min-width: 450px;
+	min-height: 345px;
+	align-items: center;
+	margin-right: 30px;
+	margin-left: 30px;
 }
 
 .button1 {
