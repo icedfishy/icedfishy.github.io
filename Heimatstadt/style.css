@@ -23,7 +23,7 @@ body{
 	margin-left: 30px; */
 }
 
-.gallery div {
+.gallery > div:not(#map) {
 	background-size: cover;
 	min-width: 450px;
 	min-height: 345px;
@@ -32,6 +32,15 @@ body{
 	align-items: center;
 	/* margin-right: 30px;
 	margin-left: 30px; */
+}
+
+#map a {
+  background-size: cover;
+  min-width: 450px;
+  min-height: 345px;
+  display: flex;
+  justify-content: left;
+  align-items: center;
 }
 
 .button1 {
@@ -55,7 +64,7 @@ body{
 	color: white;
 }
 
-#map {
+#map a {
 	/* justify-content: left;
 	min-width: 450px;
 	min-height: 345px; */
