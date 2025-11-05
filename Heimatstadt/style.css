@@ -23,11 +23,6 @@ body{
 	margin-left: 30px;
 }
 
-.gallery img {
-	width: 450px;
-	height: 345px;
-}
-
 .button1 {
 	font-family: "Comic Sans MS", "Handlee", "Comic Neue", sans-serif;
 	border: none;
@@ -50,10 +45,14 @@ body{
 }
 
 #sights {
+	min-width: 450px;
+	min-height: 345px;
 	background-image: url("../images/my_yuewanglou_edited.png");
 }
 
 #events {
+	min-width: 450px;
+	min-height: 345px;
 	background-image: url("../images/my_mifen.jpg");
 }
 
