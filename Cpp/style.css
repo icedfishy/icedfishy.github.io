@@ -9,9 +9,13 @@
 }
 
 @keyframes hueRotate {
-  0% { color: hsl(0, 100%, 50%); }
-  100% { color: hsl(360, 100%, 50%); }
+  0% { color: rgb(255, 0, 0); } /* 红色 */
+  25% { color: rgb(0, 255, 0); } /* 绿色 */
+  50% { color: rgb(0, 0, 255); } /* 蓝色 */
+  75% { color: rgb(255, 255, 0); } /* 黄色 */
+  100% { color: rgb(255, 0, 255); } /* 紫色 */
 }
+
 /* Ende */
 
 .title {
