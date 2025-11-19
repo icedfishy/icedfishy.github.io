@@ -3,6 +3,17 @@
     src: url("../fonts/ProggyVector-Regular.ttf");
 }
 
+/* yan2 se4 jian4 bian4, class="smooth-color" */
+.smooth-color {
+  animation: hueRotate 5s linear infinite;
+}
+
+@keyframes hueRotate {
+  0% { color: hsl(0, 100%, 50%); }
+  100% { color: hsl(360, 100%, 50%); }
+}
+/* Ende */
+
 .title {
   font-family: Proggy;
   text-align: center;
