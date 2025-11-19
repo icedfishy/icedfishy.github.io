@@ -9,9 +9,8 @@ html, body {
 body {
   font-family: 'Verdana', sans-serif;
   background-image: url('../images/Caocao.png');
-  background-position: center top;
-  background-size: cover;
-  margin: 0;
+    background-position: center top;
+    background-size: cover;
   color: aliceblue;
 }
 
@@ -91,6 +90,7 @@ nav a {
   color: darkmagenta;
   text-decoration: none;
 }
+
 
 
 
