@@ -1,176 +1,187 @@
-/*
-	主样式文件：从 index.html 抽离出的 CSS。
-	- 放在仓库根目录（和 index.html 同一目录），便于直接引用：<link rel="stylesheet" href="style.css">。
-	- 包含注释，帮助你理解每一部分的目的。
-*/
-
-/* 基础布局和重置 */
+/* ================================
+   基础全局样式
+================================ */
 html, body {
-	height: 100%;
-	margin: 0;
-	display: flex;
-	flex-direction: column;
-	font-weight: 300;
-	line-height: 1.5;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: Verdana, sans-serif;
+    line-height: 1.5;
+    color: aliceblue;
+    display: flex;
+    flex-direction: column;
 }
 
 body {
-	/* 字体、背景图、颜色等基础样式 */
-	font-family: 'Verdana', sans-serif;
-	background-image: url('images/Caocao.png');
-	background-position: center top;
-	background-size: cover;
-	color: aliceblue;
-	margin: 0;
+    background-image: url('images/Caocao.png');
+    background-position: center top;
+    background-size: cover;
 }
 
-/* 链接默认样式 */
+/* 链接基本样式 */
 a {
-	color: darkmagenta;
-	text-decoration: none;
-	transition-duration: 0.4s;
-	cursor: pointer;
+    color: darkmagenta;
+    text-decoration: none;
+    transition: 0.3s;
 }
 
 a:hover {
-	color: black;
-	background-color: white;
+    color: black;
+    background: white;
 }
 
-/* 容器：保证页面主体伸展占满高度 */
+/* 内容主容器 */
 .wrapper {
-	flex-direction: column;
-	height: 100%;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
 }
 
 .content {
-	flex: 1;
+    flex: 1;
 }
 
-/* 标题样式（注意：类选择器 .title） */
+/* ================================
+   标题
+================================ */
 .title {
-	text-align: center;
-	font-size: 48px;
-	font-weight: 700;
-}
-
-/* gallery: 使用 flex 排列封面卡片，便于响应式 */
-.gallery {
+    text-align: center;
+    font-size: 48px;
+    font-weight: 700;
     margin-top: 20px;
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
-    gap: 20px;
-    padding: 0 16px;
 }
 
+/* ================================
+   自动宫格（Grid）
+================================ */
+.gallery {
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); 
+    gap: 20px;
+    padding: 0 20px 100px 20px; /* 给导航栏留空间 */
+}
+
+/* 卡片 cover */
 .cover {
     border: 5px solid #fff;
+    background: rgba(0, 0, 0, 0.35);
+    aspect-ratio: 4 / 3;    /* 保持 4:3，不需要固定宽高 */
     display: flex;
     align-items: center;
     justify-content: center;
-    text-align: center;
     box-sizing: border-box;
-    background: rgba(0,0,0,0.35);
-    aspect-ratio: 4 / 3;
 }
 
-/* 把整个卡片变为可点击区域（可点击目标更大，移动端体验更好） */
+/* 让整个卡片可点击 */
 .cover a {
-	/* 关键：让 a 本身成为 flex 容器，使内部 h2 能被真正居中 */
-	display: flex;
-	align-items: center;
-	justify-content: center;
-
-	width: 100%;
-	height: 100%;
-	color: inherit;
-	text-decoration: none;
-	padding: 12px;
-	box-sizing: border-box;
-	text-align: center;
+    width: 100%;
+    height: 100%;
+    padding: 12px;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: inherit;
 }
 
 .cover a:hover {
-	color: black;
+    color: black;
 }
 
 .cover h2 {
-	margin: 0;
-	font-size: 30px;
-	line-height: 1.2;
+    margin: 0;
+    font-size: 30px;
+    text-align: center;
 }
 
-/* 导航栏和联系按钮 */
+/* ================================
+   底部导航栏
+================================ */
 nav {
-	background-color: #FFF;
-	 position: fixed;
-        bottom: 0; /* 距离视口底部为 0 */
-        left: 0;
-        width: 100%;
+    background: white;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 60px;
+    line-height: 60px;
+    padding-left: 10px;
+    box-sizing: border-box;
 }
 
 nav ul {
-	display: inline;
-	margin: 0;
-	padding: 0 12px;
+    margin: 0;
+    padding: 0;
+    display: inline;
 }
 
 nav li {
-	display: inline; 
-	margin-right: 8px;
-}
-
-.contact-button {
-	float: right;
-}
-
-.contact-button a {
-	transition-duration: 0.4s;
-	cursor: pointer;
-	margin-right: 30px;
-	padding: 8px 18px;
-	border: 1px solid darkmagenta;
-	position: relative; 
+    display: inline;
+    margin-right: 12px;
 }
 
 nav a {
-	height: 60px;
-	line-height: 60px;
-	color: darkmagenta;
-	text-decoration: none;
+    color: darkmagenta;
 }
 
-/* ------------------------------ */
-/* 移动端优化（断点：600px 以下） */
-/* 目标：卡片宽度自适应、可点击目标变大、字体和间距更适合触摸操作 */
+/* 联系按钮 */
+.contact-button {
+    float: right;
+    margin-right: 30px;
+}
+
+.contact-button a {
+    border: 1px solid darkmagenta;
+    padding: 8px 18px;
+    transition: 0.3s;
+}
+
+/* ================================
+   小屏幕优化（max-width: 600px）
+================================ */
 @media (max-width: 600px) {
-	.title { font-size: 28px; }
+    .title {
+        font-size: 32px;
+    }
 
-	/* gallery 在小屏幕上纵向排列 */
-	.gallery {
-		flex-direction: column;
-		align-items: center;
-		gap: 16px;
-		padding: 12px;
-	}
+    .gallery {
+        grid-template-columns: 1fr 1fr; /* 2 列更适合手机 */
+        gap: 12px;
+        padding: 0 12px 100px 12px;
+    }
 
-	/* 卡片宽度使用容器宽度减去边距，保证左右各有间距 */
-	.cover {
-		width: calc(100% - 32px);
-		height: auto; /* 高度自适应内容 */
-		min-height: 160px; /* 保持合适的触控目标高度 */
-		padding: 12px;
-	}
+    .cover h2 {
+        font-size: 20px;
+    }
 
-	.cover h2 { font-size: 20px; }
+    nav {
+        height: auto;
+        line-height: normal;
+        padding: 10px;
+    }
 
-	/* 导航在移动端调整为更紧凑的布局 */
-	nav a { height: auto; line-height: normal; padding: 10px 8px; display: inline-block; }
-	.contact-button a { padding: 10px 14px; margin-right: 12px; }
+    nav a {
+        display: inline-block;
+        padding: 6px 8px;
+    }
+
+    .contact-button {
+        margin-right: 10px;
+        float: none;
+        display: inline-block;
+    }
 }
 
-/* 更大屏幕可以再优化（例如 900px+ 的布局） */
+/* ================================
+   更大屏（min-width: 900px）
+================================ */
 @media (min-width: 900px) {
-	.title { font-size: 56px; }
-	.cover { width: 420px; height: 320px; }
+    .title {
+        font-size: 56px;
+    }
+
+    .cover h2 {
+        font-size: 34px;
+    }
 }
