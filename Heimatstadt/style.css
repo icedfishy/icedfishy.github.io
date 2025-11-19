@@ -1,6 +1,9 @@
 body{
   font-family: "Comic Sans MS", "Handlee", "Comic Neue", sans-serif;
   background-image: url("../images/shanshuihua.jpg");
+	background-image: url('images/Caocao.png');
+    background-position: center top;
+    background-size: cover;
 }
 
 .title {
