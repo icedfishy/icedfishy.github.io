@@ -56,25 +56,22 @@ a:hover {
 
 /* gallery: 使用 flex 排列封面卡片，便于响应式 */
 .gallery {
-	margin-top: 20px;
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: center; 
-	gap: 20px; /* 卡片间距 */
-	padding: 0 16px; /* 移动端边距 */
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    gap: 20px;
+    padding: 0 16px;
 }
 
-/* cover: 把原先的 h2 变成卡片外观的容器，内容居中 */
 .cover {
-	width: 400px;
-	height: 300px; 
-	border: 5px solid #fff;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	text-align: center;
-	box-sizing: border-box;
-	background: rgba(0,0,0,0.35); /* 半透明背景提高可读性 */
+    border: 5px solid #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    box-sizing: border-box;
+    background: rgba(0,0,0,0.35);
+    aspect-ratio: 4 / 3;
 }
 
 /* 把整个卡片变为可点击区域（可点击目标更大，移动端体验更好） */
